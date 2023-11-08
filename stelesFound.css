@@ -1,0 +1,25 @@
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Style the full-page background container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+}
+
+/* Style the form */
+.report-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+

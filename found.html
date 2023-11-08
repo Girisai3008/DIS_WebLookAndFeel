@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Pet</title>
+    <!-- Link Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link your own stylesheet if desired -->
+    <link rel="stylesheet" href="stylesFound.css">
+</head>
+<body>
+
+    <div>
+        <!-- Navigation Bar using Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">From Lost to Loved</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="found.html">I found a pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lost.html">I lost a pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Full-page Background with Bootstrap Container -->
+    <div class="container text-center mt-5">
+        <h1>Welcome to Our Lost Pet Report Page</h1>
+        <p class="lead">Please fill out the form below to report any lost pet.</p>
+    </div>
+
+    <!-- Table of Pets with Bootstrap Table Styles (customize with your data) -->
+    <div class="container mt-4">
+        <div class="table-responsive">
+            <div style="max-height: 400px; overflow: auto;">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Record Type</th>
+                            <th>Location</th>
+                            <th>Name</th>
+                            <th>Animal Type</th>
+                            <th>Age</th>
+                            <th>Animal Color</th>
+                            <th>Date</th>
+                            <th>Date Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LOST</td>
+                            <td>LOST</td>
+                            <td>Lulu</td>
+                            <td>Dog</td>
+                            <td>Over 1 year</td>
+                            <td>White</td>
+                            <td>Oct 25, 2023</td>
+                            <td>Date Lost</td>
+                        </tr>
+                        <tr>
+                            <td>ADOPTABLE</td>
+                            <td>King County Pet Adoption Center 21615 64TH AVE S KENT, WA 98032</td>
+                            <td>Goose</td>
+                            <td>Dog</td>
+                            <td>1 YEAR 6 MONTHS</td>
+                            <td>Tan / White</td>
+                            <td>Oct 29, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>FOUND</td>
+                            <td>N/A</td>
+                            <td>Luna</td>
+                            <td>Dead Dog</td>
+                            <td>1 YEAR 2 MONTHS</td>
+                            <td>Black / Tan</td>
+                            <td>Oct 15, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>ADOPTABLE</td>
+                            <td>Reber Ranch 28606 132ND AVE SE KENT, WA 98042</td>
+                            <td>Espresso</td>
+                            <td>Rabbit</td>
+                            <td>4 MONTHS</td>
+                            <td>Brown</td>
+                            <td>Oct 18, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>FOUND</td>
+                            <td>King County Pet Adoption Center 21615 64TH AVE S KENT, WA 98032</td>
+                            <td>Quack</td>
+                            <td>Chicken</td>
+                            <td>No Age</td>
+                            <td>White</td>
+                            <td>Oct 21, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>FOUND</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>Dead Cat</td>
+                            <td>13 WEEKS</td>
+                            <td>Gray Tabby / White</td>
+                            <td>Nov 04, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>ADOPTABLE</td>
+                            <td>In RASKC Foster Home</td>
+                            <td>Auggie</td>
+                            <td>Rabbit</td>
+                            <td>7 Months</td>
+                            <td>Gray / White</td>
+                            <td>Aug 20, 2023</td>
+                            <td>Received on</td>
+                        </tr>
+                        <tr>
+                            <td>LOST</td>
+                            <td>LOST</td>
+                            <td>Leo</td>
+                            <td>Cat</td>
+                            <td>Over 1 Year</td>
+                            <td>Unknown</td>
+                            <td>Oct 10, 2023</td>
+                            <td>Date Lost</td>
+                        </tr>
+                        <tr>
+                            <td>FOUND</td>
+                            <td>In Public Home</td>
+                            <td>Irene Aroner</td>
+                            <td>Dog</td>
+                            <td>Unknown</td>
+                            <td>White</td>
+                            <td>Oct 31, 2023</td>
+                            <td>Date Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report a Found Pet Form with Bootstrap Form Styles (customize as needed) -->
+    <div class="container mt-4">
+        <h2>Report a Found Pet</h2>
+        <p class="lead">(Any unknown details can be left empty)</p>
+        <div class="report-form">
+            <form id="foundPetForm">
+                <div class="form-group">
+                    <label for="recordType">Record Type</label>
+                    <select class="form-control" id="recordType" name="recordType">
+                        <option value="FOUND">Found</option>
+                        <option value="LOST">LOST</option>
+                        <option value="ADOPTABLE">Adoptable</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" name="location">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="type">Animal Type</label>
+                    <input type="text" class="form-control" id="type" name="type">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="color">Animal Color</label>
+                    <input type="text" class="form-control" id="color" name="color">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="Dtype">Date Type</label>
+                    <input type="text" class="form-control" id="Dtype" name="Dtype">
+                </div>
+                <!-- Add more form fields as needed -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section with Bootstrap Styles -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      
+              <p>
+                Adopting pets is crucial as it provides loving homes for animals in need, reduces overpopulation, and saves lives. 
+                It fosters companionship, promotes responsible pet ownership, and contributes to a compassionate society where animals are valued members of families.
+              </p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      
+              <p>
+                Adopting pets also supports ethical breeding practices and decreases the demand for puppy mills. 
+                It helps alleviate the strain on animal shelters and rescues, allowing them to focus on rehabilitation and care. 
+                Furthermore, adopting a pet brings joy, loyalty, and a sense of fulfillment to individuals and families while promoting animal welfare.
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="about.html">Contact Us</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <!-- Include Bootstrap JavaScript and jQuery (CDN) -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include your own JavaScript and additional libraries as necessary -->
+
+</body>
+</html>
