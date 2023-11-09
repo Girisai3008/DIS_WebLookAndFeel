@@ -63,8 +63,11 @@ body, html {
     margin-top: 20px; /* Increased margin-top to create more space */
 }
 
-
-
+.team-member img {
+    max-width: 80%;
+    height: 90px;
+    border-radius: 8px;
+}
 
 
 
