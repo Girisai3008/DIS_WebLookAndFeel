@@ -5,37 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Lost Pet</title>
     <!-- Link Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Link your own stylesheet if desired -->
     <link rel="stylesheet" href="stylesFound.css">
 </head>
 <body>
 
+    
     <div>
         <!-- Navigation Bar using Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="home.html">From Lost to Loved</a>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="navbar-brand text-white" href="home.html">From Lost to Loved</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link text-white" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="found.html">I found a pet</a>
+                        <a class="nav-link text-white" href="Stats.html">Stats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="lost.html">I lost a pet</a>
+                        <a class="nav-link text-white" href="found.html">I found a pet</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link text-white" href="lost.html">I lost a pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+
 
     <!-- Full-page Background with Bootstrap Container -->
     <div class="container text-center mt-5">
@@ -107,17 +114,6 @@
                             <td>Received on</td>
                         </tr>
                         <tr>
-                            <td>A697526</td>
-                            <td>FOUND</td>
-                            <td>King County Pet Adoption Center 21615 64TH AVE S KENT, WA 98032</td>
-                            <td>Quack</td>
-                            <td>Chicken</td>
-                            <td>No Age</td>
-                            <td>White</td>
-                            <td>Oct 21, 2023</td>
-                            <td>Received on</td>
-                        </tr>
-                        <tr>
                             <td>A698259</td>
                             <td>FOUND</td>
                             <td>N/A</td>
@@ -167,50 +163,57 @@
         </div>
     </div>
     <div class="container mt-4">
-        <div class="form-group">
+        <div class="form-group lead">
             <label for="searchAnimal">Search Animal by Name:</label>
-            <input type="text" class="form-control" id="searchAnimal" oninput="searchTable()" placeholder="Enter animal name">
+            <input type="text" class="form-control lead" id="searchAnimal" oninput="searchTable()" placeholder="Enter animal name">
         </div>
     </div>
 
     <!-- Footer Section with Bootstrap Styles -->
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-      
-              <p>
-                Adopting pets is crucial as it provides loving homes for animals in need, reduces overpopulation, and saves lives. 
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-google"></i>
+                </a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+
+            <!-- Section: Social media -->
+            <p>
+                Adopting pets is crucial as it provides loving homes for animals in need, reduces overpopulation, and saves lives.
                 It fosters companionship, promotes responsible pet ownership, and contributes to a compassionate society where animals are valued members of families.
-              </p>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-      
-              <p>
-                Adopting pets also supports ethical breeding practices and decreases the demand for puppy mills. 
-                It helps alleviate the strain on animal shelters and rescues, allowing them to focus on rehabilitation and care. 
-                Furthermore, adopting a pet brings joy, loyalty, and a sense of fulfillment to individuals and families while promoting animal welfare.
-              </p>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
+            </p>
         </div>
         <!-- Grid container -->
-      
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2023 Copyright:
-          <a class="text-dark" href="about.html">Contact Us</a>
+            © 2020 Copyright:
+            <a class="text-white" href="about.html">Contact Us</a>
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
 
     <!-- Include Bootstrap JavaScript and jQuery (CDN) -->
     <script src="lostScript.js"></script>

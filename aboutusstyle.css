@@ -1,0 +1,14 @@
+﻿.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .team-member img {
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+.member-info {
+    flex-grow: 1; /* Allow the info div to grow and take remaining space */
+}

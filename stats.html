@@ -1,16 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Lost to Loved</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Stats</title>
+    <!-- Link Bootstrap CSS (CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link your own stylesheet if desired -->
+    <link rel="stylesheet" href="styleStats.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
 
     <div>
         <!-- Navigation Bar using Bootstrap -->
@@ -41,33 +42,34 @@
         </nav>
     </div>
 
-    <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2100">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="goldRet.jpg" alt="First slide">
+
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2 style="text-align:left">Different pets that are lost, found or adoptable</h2>
+            <canvas id="doubleBarChart"></canvas>
+            <p class="lead">
+                This bar graph provides a comprehensive overview of the different types of pets—whether they are lost, found, or available for adoption—in our shelter.
+            </p>
+            <p class="lead">
+                Feel free to hover over the bars for precise numerical details, and click on the legends to filter and refine the information.
+            </p>
+        </div>
+
+        <div class="text-center mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="text-align:left">The percentage of pets, categorized as either lost, found, or adoptable.</h2>
+                    <canvas id="pieChart" height="500px" width="500px"></canvas>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="kitten.jpeg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="rabbit.jpeg" alt="Third slide">
+                <div class="col-md-6">
+                    <p class="lead" id="pie">Feel free to hover over each slice for precise percentages.</p>
+                    <div id="pieChartValues" class="lead mt-3" style="text-align:left; margin-left:25px;"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="content">
-        <h1>Reuniting Pets With Families</h1>
-        <p class="lead">Discover Adoptable Pets Awaiting Loving Homes</p>
-        <p class="lead">
-            Every day, countless pets go missing, their families grappling with the heartache of their absence.
-            Homes once filled with the pitter-patter of paws and the symphony of purrs now echo with an emptiness that tugs at the heartstrings.
-            The search for their lost companions becomes a relentless pursuit, fueled by the unwavering hope of a reunion.
-        </p>
-        <h2 >Our Mission</h2>
-        <p class="lead">We believe in the power of pets to bring joy, love, and companionship to people's lives. Our mission is to help lost pets find their way back home and to provide loving homes for animals in need.</p>
 
-    </div>
+
     <!-- Footer Section with Bootstrap Styles -->
     <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
@@ -114,9 +116,15 @@
         <!-- Copyright -->
     </footer>
 
-    <!-- Include Bootstrap JavaScript and jQuery -->
+
+    <!-- Include Bootstrap JavaScript and jQuery (CDN) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts.js"></script>
+
+    <!-- Include your own JavaScript and additional libraries as necessary -->
+
 </body>
 </html>
