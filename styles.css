@@ -73,8 +73,9 @@ body, html {
 }
 
 /* Your additional CSS code can be added here */
-.navbar-nav li:hover {
+/*.navbar-nav li:hover {
     background-color: white;
     color: black;
     transition: background-color 0.3s ease-in-out;
 }
+    */
