@@ -19,7 +19,6 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
 .content {
     position: absolute;
     top: 50%;
@@ -30,9 +29,21 @@ body, html {
     font-family: Tahoma;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px;
+    padding: 20px; /* Increased padding for better spacing on mobile devices */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .content {
+        position: relative; /* Change position to relative for smaller screens */
+        width: 90%; /* Adjust the width for better readability on smaller screens */
+        margin: 0 auto; /* Center the content horizontally */
+        padding: 15px; /* Adjust padding for better spacing on smaller screens */
+        box-shadow: none; /* Remove box shadow on smaller screens if needed */
+    }
+}
+
     .carousel-inner {
     position: absolute;
     width: 100%;

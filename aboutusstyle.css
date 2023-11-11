@@ -13,3 +13,38 @@
     flex-grow: 1; /* Allow the info div to grow and take remaining space */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+    }
+}
